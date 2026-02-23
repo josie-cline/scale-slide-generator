@@ -52,9 +52,27 @@ python3 generate_report.py             # generate report
 2. **Agent mode** — Describe the deck (slides, content, theme) and let Cursor update the DECK dict and run the generator
 3. **Review** — Open the output `.pptx`
 
+## Reference Document Drop-off
+
+Users may drop files (`.docx`, `.pptx`, `.pdf`, `.csv`, `.json`, `.txt`) anywhere in the repo for the AI to reference. When a user says they added a file:
+
+1. Read the file to understand its contents
+2. Extract the relevant data (metrics, milestones, summaries, tables)
+3. Build or update the `DECK` dict in `generate_deck.py` with the extracted content
+4. Run the generator
+
+Common drop-off locations: `templates/`, `references/`, or the project root.
+
+## External Tool Integration
+
+Users may have MCP servers connected (Google Drive, Jira, Slack, Confluence, etc.). When asked to pull data from or push data to an external tool, use the available MCP tools if configured. If not configured, suggest the user set up the appropriate MCP server in Cursor Settings > MCP.
+
+The `utils/` folder contains Google Drive upload helpers that require `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` environment variables.
+
 ## Customization
 
 - **Add slides** — Add entries to `DECK["slides"]` with any supported layout
 - **Change content** — Update text in existing slide entries
 - **Add themes** — Extend the `THEMES` dict with new color schemes
 - **Add layouts** — Create a `_render_*` function and register it in `RENDERERS`
+- **Add packages** — Install via pip, add to `requirements.txt`, and use in new layouts

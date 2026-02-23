@@ -7,7 +7,7 @@ Generate a complete styled slide deck from a natural-language description. This 
 ## Prerequisites
 
 - macOS, Windows, or Linux
-- Python 3.9+
+- Python 3.9+ ([install guide below](#local-python-setup) if you don't have it)
 - A GitHub account
 
 ---
@@ -39,6 +39,12 @@ Cursor automatically picks up the `.cursor/rules/` directory, giving the AI full
 ## Step 3: Install Dependencies
 
 ```bash
+# (Recommended) Create a virtual environment first
+python3 -m venv venv
+source venv/bin/activate        # macOS/Linux
+# venv\Scripts\activate         # Windows
+
+# Install
 pip install -r requirements.txt
 ```
 
@@ -188,12 +194,145 @@ The file is ready for presentation — consistent styling, no manual formatting.
 
 ---
 
+## Working with Reference Documents
+
+You can drop existing documents into the project and have Cursor extract content from them to build slides.
+
+### Drop-off workflow
+
+1. Place files anywhere in the repo — `templates/`, `references/`, or the root
+2. Tell Cursor what you dropped and what to do with it:
+
+```
+I added our Q4 program review to templates/Q4_Review.docx.
+Extract the executive summary, key metrics, and milestone table.
+Build a 5-slide deck from that content. Generate in dark mode.
+```
+
+Cursor can read `.docx`, `.pptx`, `.pdf`, `.csv`, `.json`, and plain text directly.
+
+### Example: build slides from a status report
+
+```
+Read templates/January_MSR.docx. Pull out the top 4 accomplishments
+and the risk table. Create a content slide for accomplishments and
+a table slide for risks. Generate both themes.
+```
+
+---
+
+## Integrating External Tools
+
+For teams that want to connect Cursor to external services (Google Drive, Slack, Jira, etc.), Cursor supports MCP (Model Context Protocol) servers.
+
+### What MCP enables
+
+Once an MCP server is configured, you can prompt across tools without leaving Cursor:
+
+```
+Pull the latest milestone dates from the Jira board, update the
+table slide, and regenerate the deck.
+```
+
+```
+Read the exec summary from the Google Doc at [URL] and create
+a content slide from it.
+```
+
+```
+Generate the deck in dark mode, then upload it to the team's
+Google Drive folder.
+```
+
+### Setting up an MCP server
+
+1. Open **Cursor Settings > MCP**
+2. Add the server config (name, command, args) — each MCP server has its own setup instructions
+3. Restart Cursor
+
+See Cursor's [MCP documentation](https://docs.cursor.com/context/model-context-protocol) for details.
+
+### Google Drive (included)
+
+This repo includes utility scripts for Drive upload:
+
+1. Set environment variables (see `.env.example`):
+   ```bash
+   export GOOGLE_CLIENT_ID=your-client-id
+   export GOOGLE_CLIENT_SECRET=your-client-secret
+   ```
+2. Run the one-time auth flow: `python3 utils/gdrive_auth.py`
+3. Upload: `python3 utils/upload_to_drive.py`
+
+Or set up the Google Drive MCP server for persistent access through the chat.
+
+### Adding capabilities via Python packages
+
+To extend the generator (e.g., embed charts, pull live data):
+
+```bash
+pip install matplotlib   # example
+```
+
+Then ask Cursor:
+
+```
+Add a "chart" layout that renders a bar chart using matplotlib
+and embeds it as an image on the slide. Here's the data: ...
+```
+
+---
+
+## Running Without Cursor
+
+<a id="local-python-setup"></a>
+
+You don't need Cursor to use the generators — they're standalone Python scripts.
+
+### Install Python
+
+**macOS:**
+```bash
+python3 --version              # check if installed
+xcode-select --install         # installs Python 3 if missing
+```
+
+**Windows:**
+- Download from [python.org](https://www.python.org/downloads/)
+- Check "Add Python to PATH" during installation
+
+### Set up and run
+
+```bash
+cd scale-slide-generator
+
+# Create a virtual environment
+python3 -m venv venv
+source venv/bin/activate        # macOS/Linux
+# venv\Scripts\activate         # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Edit generate_deck.py with your content, then:
+python3 generate_deck.py --theme dark
+python3 generate_deck.py --theme light
+
+# Open the output
+open output/Example_Deck_dark.pptx          # macOS
+# start output\Example_Deck_dark.pptx       # Windows
+```
+
+---
+
 ## Troubleshooting
 
 | Issue | Fix |
 |-------|-----|
-| `ModuleNotFoundError: No module named 'pptx'` | `pip install -r requirements.txt` |
+| `ModuleNotFoundError: No module named 'pptx'` | `pip install -r requirements.txt` (activate your venv first) |
+| `python3: command not found` | Install Python 3 — see [local setup](#local-python-setup) above |
 | Output won't open | Close any existing copy of the file |
-| AI doesn't recognize the project | Open `scale-slide-generator` as the workspace root |
+| AI doesn't recognize the project | Open `scale-slide-generator` as the workspace root in Cursor |
 | Need a layout that doesn't exist | *"Add a new layout called 'image_caption' that shows..."* |
 | Want custom colors | *"Add a 'navy' theme with dark navy backgrounds and gold accents"* |
+| Want to connect to Jira/Slack/Drive | Set up an MCP server — see [Integrating External Tools](#integrating-external-tools) |

@@ -110,6 +110,143 @@ scale-slide-generator/
 
 ---
 
+## Running Locally (Without Cursor)
+
+You don't need Cursor to use the generators — they're standalone Python scripts.
+
+### 1. Install Python
+
+macOS:
+```bash
+# Check if Python 3 is installed
+python3 --version
+
+# If not, install via Xcode command-line tools (ships with Python 3)
+xcode-select --install
+```
+
+Windows:
+- Download from [python.org](https://www.python.org/downloads/) (check "Add to PATH" during install)
+
+### 2. Set Up a Virtual Environment (Recommended)
+
+```bash
+cd scale-slide-generator
+
+# Create a virtual environment
+python3 -m venv venv
+
+# Activate it
+source venv/bin/activate        # macOS/Linux
+# venv\Scripts\activate         # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### 3. Edit and Run
+
+Open `generate_deck.py` in any text editor, update the `DECK` dict with your content, then:
+
+```bash
+python3 generate_deck.py --theme dark
+python3 generate_deck.py --theme light
+```
+
+Output files land in `output/`. Open them with PowerPoint, Keynote, or Google Slides.
+
+---
+
+## Working with Reference Documents
+
+### Drop-off Workflow
+
+If you have existing documents (PWS files, templates, prior presentations) you want the AI to reference when building slides, drop them into the project and tell Cursor where they are:
+
+1. Place files anywhere in the repo (e.g., `templates/`, or create a folder like `references/`)
+2. In Cursor Agent mode, tell it what you dropped and what to do:
+
+```
+I added our Q4 status report to templates/Q4_Status_Report.docx.
+Extract the key metrics and milestones and build a 4-slide summary deck.
+Generate in dark mode.
+```
+
+Cursor can read `.docx`, `.pptx`, `.pdf`, `.csv`, `.json`, and plain text files directly — no special setup needed.
+
+### Supported File Types for Drop-off
+
+| Type | Extensions | Notes |
+|------|-----------|-------|
+| Word | `.docx` | Full paragraph and table extraction |
+| PowerPoint | `.pptx` | Slide text and structure |
+| PDF | `.pdf` | Text extraction (not scanned images) |
+| Data | `.csv`, `.json`, `.xlsx` | Structured data for tables and metrics |
+| Text | `.txt`, `.md` | Plain text content |
+
+---
+
+## Integrating External Tools and Apps
+
+For teams that want deeper integration beyond file drop-off, Cursor supports MCP (Model Context Protocol) servers that connect to external services directly.
+
+### Google Drive Integration
+
+Upload generated files to Google Drive without leaving Cursor:
+
+1. Set environment variables (see `.env.example`):
+   ```bash
+   export GOOGLE_CLIENT_ID=your-client-id
+   export GOOGLE_CLIENT_SECRET=your-client-secret
+   ```
+2. Run the one-time auth flow:
+   ```bash
+   python3 utils/gdrive_auth.py
+   ```
+3. Upload from Cursor Agent mode:
+   ```
+   Generate the deck in dark mode, then upload it to Google Drive.
+   ```
+
+For persistent Drive access, set up the [Google Drive MCP server](https://github.com/anthropics/model-context-protocol) in Cursor settings so the AI can browse, read, and write to Drive natively.
+
+### Adding MCP Servers
+
+MCP servers let Cursor interact with external tools (Slack, Jira, Confluence, email, databases, etc.) through the chat interface. To add one:
+
+1. Open **Cursor Settings > MCP**
+2. Add the server config (name, command, args)
+3. Restart Cursor
+
+Once connected, you can prompt across tools:
+
+```
+Pull the latest milestone dates from the Jira board, update the table slide, and regenerate the deck.
+```
+
+```
+Read the exec summary from the Google Doc at [URL] and create a content slide from it.
+```
+
+See Cursor's [MCP documentation](https://docs.cursor.com/context/model-context-protocol) for setup instructions.
+
+### Adding Python Packages
+
+To extend the generators with additional capabilities (e.g., charts, image embedding, data fetching):
+
+1. Install the package:
+   ```bash
+   pip install matplotlib  # example
+   ```
+2. Add it to `requirements.txt`
+3. Ask Cursor to use it:
+   ```
+   Add a new "chart" layout that uses matplotlib to render a bar chart
+   as an image and embed it in the slide. Here's the data: ...
+   ```
+
+---
+
 ## Custom Themes
 
 To add a theme, extend the `THEMES` dict in `generate_deck.py`:
