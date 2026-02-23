@@ -5,52 +5,56 @@ alwaysApply: true
 
 # Scale Slide Generator
 
-Prompt-driven slide and document generation for Scale AI programs. Users describe what they need; Cursor generates publication-ready PowerPoint and Word artifacts.
+Generate styled PowerPoint decks from simple data definitions. Any slide type, any content, in Scale styling.
 
-## Generators
+## Main Generator
 
-| Script | What it does | Themes |
-|--------|-------------|--------|
-| `generate_roadmap.py` | Gantt-style roadmap slide (.pptx) | `--theme dark` / `--theme light` |
-| `generate_report.py` | Monthly status report (.docx) from template | N/A |
+`generate_deck.py` — Builds a full `.pptx` deck from the `DECK` dict at the top of the file.
 
-## Key Commands
+### Supported Layouts
+
+| Layout | Data keys |
+|--------|-----------|
+| `title` | `title`, `subtitle` |
+| `section` | `title` |
+| `content` | `title`, `bullets` (list of strings) |
+| `two_column` | `title`, `left_title`, `left_bullets`, `right_title`, `right_bullets` |
+| `metrics` | `title`, `metrics` (list of `{label, value, detail}`) |
+| `table` | `title`, `headers` (list), `rows` (list of lists) |
+| `gantt` | `title`, `subtitle`, `quarters`, `months`, `phases`, `tasks` |
+
+### Commands
 
 ```bash
-python3 generate_roadmap.py --theme dark
-python3 generate_roadmap.py --theme light
-python3 generate_report.py
+python3 generate_deck.py --theme dark
+python3 generate_deck.py --theme light
+```
+
+## Report Generator
+
+`generate_report.py` — Generates `.docx` from a template with paragraph/table replacements.
+
+```bash
 python3 generate_report.py --inspect   # show template structure
+python3 generate_report.py             # generate report
 ```
 
 ## Key Paths
 
 - `output/` — All generated artifacts (gitignored)
-- `templates/` — Source .docx templates for the report generator
-- `examples/` — Program-specific reference implementations
+- `templates/` — Source `.docx` templates
+- `examples/` — Reference implementations
 - `utils/` — Google Drive upload, formatting helpers
-
-## How to Customize
-
-### Roadmap
-Edit the data section at the top of `generate_roadmap.py`:
-- `PROGRAM` — Program metadata (name, subtitle, title, period, footer)
-- `QUARTERS` / `MONTHS` — Timeline labels
-- `PHASES` — Phase names (auto-assigned bar colors)
-- `TASKS` — Tuple list: (phase, task_name, start_month, end_month, is_milestone, due_date)
-
-### Status Report
-1. Place a `.docx` template in `templates/`
-2. Run `--inspect` to find paragraph/table indices
-3. Update `PARAGRAPH_UPDATES` and `TABLE_UPDATES` dicts
-4. Run `generate_report.py`
 
 ## How Users Should Work
 
-1. **Ask mode** — Explore what's available, plan the task, understand data to update
-2. **Agent mode** — Describe the program, tasks, and theme; let Cursor update the data and run the generator
-3. **Review** — Open the output file and verify
+1. **Ask mode** — Explore layouts, understand the DECK format, plan the presentation
+2. **Agent mode** — Describe the deck (slides, content, theme) and let Cursor update the DECK dict and run the generator
+3. **Review** — Open the output `.pptx`
 
-## Theme Support
+## Customization
 
-Both `dark` and `light` are built in. Bar colors auto-cycle across phases. To add a custom theme, extend the `THEMES` dict and add a matching `_BAR_PALETTE_*` list.
+- **Add slides** — Add entries to `DECK["slides"]` with any supported layout
+- **Change content** — Update text in existing slide entries
+- **Add themes** — Extend the `THEMES` dict with new color schemes
+- **Add layouts** — Create a `_render_*` function and register it in `RENDERERS`
