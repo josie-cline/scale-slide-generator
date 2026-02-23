@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+env/
+venv/
+.venv/
+.Python
+
+.env
+*.env.local
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+.DS_Store
+Thumbs.db
+
+# Generated slide outputs
+vof/output/*.pptx
+vof/output/*.docx
+dla_ascend/output/*.pptx
+dla_ascend/output/*.docx
+
+# Temp files from Office
+~$*
