@@ -1,17 +1,19 @@
 # Scale Slide Generator
 
-Prompt-driven slide and document generation for Scale AI government programs. Describe what you need in natural language inside [Cursor](https://cursor.com); get publication-ready PowerPoint and Word artifacts in seconds.
+Prompt-driven slide and document generation for Scale AI programs. Describe what you need in natural language inside [Cursor](https://cursor.com); get publication-ready PowerPoint and Word artifacts in seconds.
+
+---
 
 ## What It Does
 
 | Generator | Command | Output |
 |-----------|---------|--------|
-| VoF Roadmap | `python3 vof/generate_vof_roadmap.py --theme dark` | Gantt-style roadmap slide (OP2 & OP3) |
-| VoF MSR | `python3 vof/generate_vof_msr.py` | Monthly status report (.docx) |
-| DLA Roadmap | `python3 dla_ascend/generate_dla_roadmap.py --theme dark` | Gantt-style roadmap slide (OP2 & OP3) |
-| DLA PoC Plan | `python3 dla_ascend/generate_poc_plan_op2.py` | Proof of Concept plan (.docx) |
+| **Roadmap** | `python3 generate_roadmap.py --theme dark` | Gantt-style roadmap slide (.pptx) |
+| **Status Report** | `python3 generate_report.py` | Monthly status report (.docx) |
 
-Both roadmap generators support `--theme dark` (default) and `--theme light`.
+Both generators support `--theme dark` (default) and `--theme light`.
+
+---
 
 ## Quick Start
 
@@ -24,55 +26,74 @@ cd scale-slide-generator
 pip install -r requirements.txt
 
 # 3. Generate a roadmap
-python3 vof/generate_vof_roadmap.py --theme dark
-open vof/output/VoF_Roadmap_OP2_OP3_dark.pptx
+python3 generate_roadmap.py --theme dark
+open output/Program_Name_Roadmap_dark.pptx
 ```
+
+---
 
 ## Using with Cursor (Recommended)
 
-This repo is designed to be used inside Cursor IDE with AI assistance. The `.cursor/rules/` directory provides workspace context so the AI understands the project structure, available generators, and how to use them.
+This repo is designed to be used inside [Cursor IDE](https://cursor.com) with AI assistance. The `.cursor/rules/` directory provides workspace context so the AI understands the project automatically.
 
 ### Workflow
 
-1. **Open in Cursor** — Clone this repo and open the folder in Cursor
-2. **Ask mode** — Ask questions to explore the project and plan your task
-   - *"What generators are available?"*
-   - *"I need to update the VoF roadmap with new milestones. What should I change?"*
-3. **Agent mode** — Describe what you need and let the AI generate it
-   - *"Generate the VoF roadmap in dark mode"*
-   - *"Add a new task 'Security Audit' under Platform Sustainment from April to May, then regenerate both themes"*
-4. **Review** — Open the output file and verify
+1. **Open in Cursor** — Clone this repo and open the folder
+2. **Ask mode** — Explore and plan before generating
+   - *"What generators are available and how do I configure them?"*
+   - *"I need a roadmap for a 6-month program with 4 phases. What should I update?"*
+3. **Agent mode** — Describe what you need
+   - *"Set up the roadmap for my program called Thunderbolt. Here are the tasks: ..."*
+   - *"Generate the roadmap in both dark and light mode"*
+4. **Review** — Open the output PPTX and deliver
 
 See [`demo/WALKTHROUGH.md`](demo/WALKTHROUGH.md) for a complete step-by-step guide.
+
+---
+
+## Customizing for Your Program
+
+### Roadmap (`generate_roadmap.py`)
+
+Edit the data section at the top of the file (or let Cursor do it):
+
+- **`PROGRAM`** — Name, subtitle, title, period text, footer
+- **`QUARTERS`** / **`MONTHS`** — Timeline labels
+- **`PHASES`** — Phase names (each gets a unique bar color)
+- **`TASKS`** — Task list with phase, name, start/end month, milestone flag, due date
+
+### Status Report (`generate_report.py`)
+
+1. Place your `.docx` template in `templates/`
+2. Run `python3 generate_report.py --inspect` to see paragraph and table indices
+3. Update `PARAGRAPH_UPDATES` and `TABLE_UPDATES` with your content
+4. Run `python3 generate_report.py`
+
+Or just tell Cursor: *"Update the status report for reporting period X with these highlights: ..."*
+
+---
 
 ## Project Structure
 
 ```
 scale-slide-generator/
-├── README.md
-├── requirements.txt
+├── generate_roadmap.py      # Roadmap slide generator (dark/light)
+├── generate_report.py       # Status report generator
+├── requirements.txt         # python-pptx, python-docx
 ├── .cursor/rules/           # Cursor AI workspace context
 ├── demo/WALKTHROUGH.md      # Cradle-to-grave demo guide
-├── vof/                     # Valley of Fire generators
-│   ├── generate_vof_roadmap.py
-│   ├── generate_vof_msr.py
-│   └── output/              # Generated files (gitignored)
-├── dla_ascend/              # DLA ASCEND generators
-│   ├── generate_dla_roadmap.py
-│   ├── generate_poc_plan_op2.py
-│   ├── pws_dropoff/         # Drop zone for PWS docs
-│   └── output/              # Generated files (gitignored)
-└── scale_ai_disa/           # Source templates
-    └── ScaleAi DISA - JAN 2026 MSR.docx
+├── templates/               # Source .docx templates
+├── output/                  # Generated files (gitignored)
+├── utils/                   # Google Drive upload, helpers
+└── examples/                # Program-specific reference implementations
 ```
 
-## Adding New Programs
+---
 
-Each generator is a standalone Python script. To add a new program:
+## Adding Custom Themes
 
-1. Create a new folder (e.g., `new_program/`)
-2. Copy an existing generator as a starting point
-3. Update the `TASKS`, `MONTHS`, and `THEMES` dictionaries
-4. Run it: `python3 new_program/generate_roadmap.py --theme dark`
+The `THEMES` dict and `_BAR_PALETTE_*` lists in `generate_roadmap.py` control all colors. To add a custom theme, tell Cursor:
 
-The `THEMES` dictionary in each generator makes it straightforward to add custom color schemes beyond dark and light.
+> *"Add a 'navy' theme with dark navy headers, white text, and gold/teal/coral bar colors"*
+
+Or copy the `"dark"` entry in `THEMES`, rename it, and adjust the RGB values.

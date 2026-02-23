@@ -3,49 +3,54 @@ description: Scale Slide Generator — workspace context for Cursor AI
 alwaysApply: true
 ---
 
-# Scale Slide Generator — Workspace Context
+# Scale Slide Generator
 
-Prompt-driven slide and document generation for Scale AI government programs. Users describe what they need; Cursor generates publication-ready PowerPoint and Word artifacts.
+Prompt-driven slide and document generation for Scale AI programs. Users describe what they need; Cursor generates publication-ready PowerPoint and Word artifacts.
 
-## Projects
+## Generators
 
-| Project | Folder | What it does |
-|---------|--------|-------------|
-| **VoF (Valley of Fire)** | `vof/` | Generates monthly status reports (MSR) and OP2/OP3 roadmap PowerPoints for the Valley of Fire program |
-| **DLA ASCEND** | `dla_ascend/` | Generates Gantt roadmap PPTs and processes PWS deliverables for DLA Option Periods 2 & 3 |
-| **Scale AI DISA** | `scale_ai_disa/` | Holds the DISA MSR `.docx` template used by the VoF generator |
+| Script | What it does | Themes |
+|--------|-------------|--------|
+| `generate_roadmap.py` | Gantt-style roadmap slide (.pptx) | `--theme dark` / `--theme light` |
+| `generate_report.py` | Monthly status report (.docx) from template | N/A |
 
 ## Key Commands
 
 ```bash
-# VoF roadmap — dark or light theme
-python3 vof/generate_vof_roadmap.py --theme dark
-python3 vof/generate_vof_roadmap.py --theme light
-
-# VoF monthly status report
-python3 vof/generate_vof_msr.py
-
-# DLA roadmap — dark or light theme
-python3 dla_ascend/generate_dla_roadmap.py --theme dark
-python3 dla_ascend/generate_dla_roadmap.py --theme light
-
-# DLA PoC Plan
-python3 dla_ascend/generate_poc_plan_op2.py
+python3 generate_roadmap.py --theme dark
+python3 generate_roadmap.py --theme light
+python3 generate_report.py
+python3 generate_report.py --inspect   # show template structure
 ```
 
 ## Key Paths
 
-- `vof/output/` — Generated VoF artifacts (PPTs, reports)
-- `dla_ascend/output/` — Generated DLA artifacts
-- `dla_ascend/pws_dropoff/` — Drop zone for DLA PWS documents
-- `scale_ai_disa/` — Source templates
+- `output/` — All generated artifacts (gitignored)
+- `templates/` — Source .docx templates for the report generator
+- `examples/` — Program-specific reference implementations
+- `utils/` — Google Drive upload, formatting helpers
+
+## How to Customize
+
+### Roadmap
+Edit the data section at the top of `generate_roadmap.py`:
+- `PROGRAM` — Program metadata (name, subtitle, title, period, footer)
+- `QUARTERS` / `MONTHS` — Timeline labels
+- `PHASES` — Phase names (auto-assigned bar colors)
+- `TASKS` — Tuple list: (phase, task_name, start_month, end_month, is_milestone, due_date)
+
+### Status Report
+1. Place a `.docx` template in `templates/`
+2. Run `--inspect` to find paragraph/table indices
+3. Update `PARAGRAPH_UPDATES` and `TABLE_UPDATES` dicts
+4. Run `generate_report.py`
 
 ## How Users Should Work
 
-1. **Ask mode first** — Explore available generators, understand what data needs updating, plan the task
-2. **Agent mode** — Describe the desired slide (program, theme, any data changes) and let Cursor generate it
-3. **Review** — Open the output PPTX/DOCX and verify
+1. **Ask mode** — Explore what's available, plan the task, understand data to update
+2. **Agent mode** — Describe the program, tasks, and theme; let Cursor update the data and run the generator
+3. **Review** — Open the output file and verify
 
 ## Theme Support
 
-Both roadmap generators support `--theme dark` and `--theme light`. Dark is the default. Theme palettes are defined in the `THEMES` dict at the top of each generator — easy to extend with additional color schemes.
+Both `dark` and `light` are built in. Bar colors auto-cycle across phases. To add a custom theme, extend the `THEMES` dict and add a matching `_BAR_PALETTE_*` list.

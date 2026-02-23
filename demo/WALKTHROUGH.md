@@ -9,7 +9,7 @@ This guide walks through the complete workflow — from installing Cursor to hol
 - macOS, Windows, or Linux
 - Python 3.9+
 - A GitHub account
-- Internet connection (for cloning and installing packages)
+- Internet connection
 
 ---
 
@@ -25,16 +25,16 @@ This guide walks through the complete workflow — from installing Cursor to hol
 
 ## Step 2: Clone the Repo
 
-Open Cursor's integrated terminal (`Ctrl+`` ` or `Cmd+`` `) and run:
+Open Cursor's integrated terminal (`` Ctrl+` `` or `` Cmd+` ``) and run:
 
 ```bash
 git clone https://github.com/josie-cline/scale-slide-generator.git
 ```
 
-Then open the folder in Cursor:
+Then open the folder:
 - **File > Open Folder** and select `scale-slide-generator`
 
-Cursor will automatically detect the `.cursor/rules/` directory. This gives the AI full context about the project — what generators exist, how to run them, and what the output looks like.
+Cursor automatically detects the `.cursor/rules/` directory. This gives the AI full context about the generators, commands, and project structure — no setup required.
 
 ---
 
@@ -46,151 +46,138 @@ In the terminal:
 pip install -r requirements.txt
 ```
 
-This installs `python-pptx` (PowerPoint generation) and `python-docx` (Word document generation). That's it — no complex setup, no databases, no API keys.
+This installs `python-pptx` (PowerPoint) and `python-docx` (Word). No APIs, no databases, no complex setup.
 
 ---
 
-## Step 4: Explore with Ask Mode (Planning)
+## Step 4: Explore with Ask Mode
 
-Before generating anything, use **Ask mode** to understand what's available and plan your approach.
+Before generating anything, use **Ask mode** to understand what's available.
 
 ### Switch to Ask mode
 
-In the Cursor chat panel, click the mode selector (bottom of chat) and choose **Ask**.
+In the Cursor chat panel, click the mode selector and choose **Ask**.
 
-### Try these prompts
+### Example prompts
 
-**Prompt 1: Discover what's available**
-
-```
-What slide generators are available in this project? What does each one produce?
-```
-
-The AI will explain the four generators (VoF roadmap, VoF MSR, DLA roadmap, DLA PoC Plan), what each outputs, and how to run them.
-
-**Prompt 2: Plan your task**
+**Discover what's available:**
 
 ```
-I need to generate a VoF OP2/OP3 roadmap slide. What data does the generator use and what would I need to change if the timeline shifted?
+What generators does this project have and how do I use them?
 ```
 
-The AI will walk you through the `TASKS` list, the `MONTHS` array, and the `QUARTERS` array — the three places where roadmap data lives. It will explain the tuple format and how start/end month indices map to the timeline.
+The AI will explain both generators, their flags, and how to configure them.
 
-**Prompt 3: Understand themes**
+**Plan your task:**
 
 ```
-What's the difference between dark and light themes? Can I preview both?
+I need to create a roadmap for a new program. What do I need to configure?
 ```
 
-The AI will describe the color palettes and tell you how to generate both with `--theme dark` and `--theme light`.
+The AI will walk you through `PROGRAM`, `QUARTERS`, `MONTHS`, `PHASES`, and `TASKS` — the five things you edit to define any roadmap.
 
-> **Why Ask mode?** Ask mode is read-only — the AI can explore the codebase and explain everything without changing any files. It's the right tool for understanding a new project or planning a task before you execute.
+**Understand themes:**
+
+```
+What themes are available and how do I add a custom one?
+```
+
+> **Why Ask mode?** It's read-only — the AI explores and explains without changing files. Use it to plan before you execute.
 
 ---
 
-## Step 5: Generate Slides (Agent Mode)
+## Step 5: Generate a Roadmap (Agent Mode)
 
-Now switch to **Agent mode** to generate the actual slides.
+Switch to **Agent mode** (click the mode selector and choose **Agent**).
 
-### Switch to Agent mode
-
-Click the mode selector and choose **Agent** (or **Normal**).
-
-### Generate the VoF roadmap in dark mode
+### Set up your program
 
 **Prompt:**
 
 ```
-Generate the VoF OP2/OP3 roadmap slide in dark mode.
+Update the roadmap for my program. Here's the info:
+
+Program name: Thunderbolt
+Contract: HC1084-26-0042
+Title: Project Roadmap: Phase 1 & 2
+Period: Phase 1: Mar-Jun 2026 · Phase 2: Jul-Oct 2026
+
+Quarters: Q1 2026, Q2 2026, Q3 2026, Q4 2026
+Months: Mar, Apr, May, Jun, Jul, Aug, Sep, Oct
+
+Phases: Onboarding, Development, Testing, Delivery
+
+Tasks:
+- Onboarding: Stakeholder engagement, Mar-Apr
+- Onboarding: Data source identification, Mar-May
+- Development: Core application build, Apr-Jul
+- Development: Integration testing, Jun-Aug
+- Testing: User acceptance testing, Jul-Aug, due 31 Aug 2026
+- Delivery: Production deployment, Sep-Oct, due 15 Oct 2026
+- Delivery: Documentation & training, Sep-Oct
+
+Generate in both dark and light mode.
 ```
 
-**What happens:** The AI runs `python3 vof/generate_vof_roadmap.py --theme dark` and confirms the output path.
+**What happens:** The AI updates `generate_roadmap.py` with your program data, then runs it twice — once for each theme.
 
-**Open the result:**
+### Open the results
 
 ```bash
-open vof/output/VoF_Roadmap_OP2_OP3_dark.pptx
-```
-
-### Generate the same roadmap in light mode
-
-**Prompt:**
-
-```
-Now generate the same roadmap in light mode.
-```
-
-**What happens:** The AI runs the same script with `--theme light`. You now have both versions side by side.
-
----
-
-## Step 6: Customize Content
-
-This is where the time savings become obvious. Instead of manually editing PowerPoint shapes, you describe the change in plain English.
-
-### Add a new task
-
-**Prompt:**
-
-```
-Add a new task to the VoF roadmap: "ServiceNow Integration Testing" under Data & Integration, spanning March through April, with due date "30 Apr 2026". Then regenerate both dark and light themes.
-```
-
-**What happens:** The AI:
-1. Opens `vof/generate_vof_roadmap.py`
-2. Adds a new entry to the `TASKS` list
-3. Runs the generator twice (dark and light)
-4. Confirms both output files
-
-### Modify existing tasks
-
-**Prompt:**
-
-```
-Change the "OP2 Closeout" due date from "14 May 2026" to "21 May 2026" and regenerate in dark mode.
-```
-
-### Generate a completely different program's roadmap
-
-**Prompt:**
-
-```
-Generate the DLA ASCEND roadmap in both dark and light mode.
+open output/Thunderbolt_Roadmap_dark.pptx
+open output/Thunderbolt_Roadmap_light.pptx
 ```
 
 ---
 
-## Step 7: Generate Documents
+## Step 6: Make Changes
 
-Slide decks aren't the only output. The same workflow applies to Word documents.
+Instead of editing PowerPoint shapes by hand, describe what you want.
+
+### Add a task
+
+```
+Add a milestone called "Kickoff Review" under Onboarding in the first month, due 15 Mar 2026. Regenerate both themes.
+```
+
+### Change dates
+
+```
+Move "User acceptance testing" to Aug-Sep and update the due date to 30 Sep 2026. Regenerate dark mode.
+```
+
+### Add a phase
+
+```
+Add a new phase called "Optimization" with one task: "Performance tuning" from Sep to Oct. Regenerate both themes.
+```
+
+---
+
+## Step 7: Generate a Status Report
+
+If you have a `.docx` template for your program's monthly status report:
 
 **Prompt:**
 
 ```
-Generate the VoF monthly status report.
+I need to generate a monthly status report. My template is at templates/my_template.docx.
+First inspect it so I can see the paragraph structure, then I'll tell you what to update.
 ```
 
-**What happens:** The AI runs `python3 vof/generate_vof_msr.py`, which copies the Scale AI DISA template and fills in the current reporting period's content.
+The AI runs `--inspect`, shows you the structure, and you provide the updates.
 
 ---
 
 ## Step 8: Review and Deliver
 
-Open the generated files:
-
 ```bash
-# Roadmaps
-open vof/output/VoF_Roadmap_OP2_OP3_dark.pptx
-open vof/output/VoF_Roadmap_OP2_OP3_light.pptx
-
-# DLA
-open dla_ascend/output/DLA_Roadmap_OP2_OP3_dark.pptx
-
-# MSR
-open vof/VoF_Monthly_Status_Report_16Jan-14Feb_2026.docx
+# Open generated files
+open output/Thunderbolt_Roadmap_dark.pptx
+open output/Monthly_Status_Report.docx
 ```
 
-The files are ready for presentation — no manual formatting required.
+The files are ready for presentation — no manual formatting needed.
 
 ---
 
@@ -198,21 +185,21 @@ The files are ready for presentation — no manual formatting required.
 
 | Task | Manual (PowerPoint) | With Cursor |
 |------|-------------------|-------------|
-| Create a roadmap slide from scratch | 2-3 hours | ~30 seconds |
-| Update 3 task dates and regenerate | 20-30 minutes | ~15 seconds |
+| Create a roadmap from scratch | 2-3 hours | ~30 seconds |
+| Update task dates and regenerate | 20-30 minutes | ~15 seconds |
 | Generate both dark and light versions | Double the above | One extra prompt |
 | Add a new task row with Gantt bar | 15-20 minutes | ~10 seconds |
-| Generate monthly status report | 1-2 hours | ~10 seconds |
+| Generate a monthly status report | 1-2 hours | ~10 seconds |
 
 ---
 
 ## Tips for Effective Prompting
 
-1. **Be specific about the program** — Say "VoF roadmap" or "DLA roadmap", not just "roadmap"
-2. **Specify the theme** — Include "dark mode" or "light mode" in your prompt
-3. **Describe data changes precisely** — Give exact task names, date ranges, and due dates
-4. **Ask the AI to regenerate after changes** — It won't auto-run the script unless you tell it to
-5. **Use Ask mode first** if you're unsure what to change — it'll point you to the right code without modifying anything
+1. **Give all your program data up front** — name, contract, phases, tasks, and dates in one prompt
+2. **Specify the theme** — Include "dark mode", "light mode", or "both themes"
+3. **Be precise about changes** — Exact task names, date ranges, and due dates
+4. **Ask the AI to regenerate** — It won't auto-run the script unless you say so
+5. **Use Ask mode first** if you're unsure — it explains without modifying anything
 
 ---
 
@@ -221,6 +208,7 @@ The files are ready for presentation — no manual formatting required.
 | Issue | Fix |
 |-------|-----|
 | `ModuleNotFoundError: No module named 'pptx'` | Run `pip install -r requirements.txt` |
-| Output file won't open | Close any existing open copy of the file first |
-| AI doesn't know about the generators | Make sure you opened the `scale-slide-generator` folder (not a parent directory) so `.cursor/rules/` is detected |
-| Want to add a new color theme | Ask the AI: *"Add a 'navy' theme to the VoF roadmap generator with navy blue headers and gold accents"* |
+| Output file won't open | Close any existing copy of the file first |
+| AI doesn't know about the generators | Make sure you opened `scale-slide-generator` as the workspace folder |
+| Want a custom color theme | *"Add a 'navy' theme with dark navy headers and gold accents"* |
+| Too many/few months in the table | Update `MONTHS` and `QUARTERS` to match your timeline |
