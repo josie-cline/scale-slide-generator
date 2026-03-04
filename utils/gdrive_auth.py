@@ -14,6 +14,16 @@ import os
 CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", "")
 CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", "")
 REDIRECT_URI = "http://localhost:3000/oauth2callback"
+
+
+def _check_env():
+    """Ensure Google OAuth credentials are set before starting auth flow."""
+    if not CLIENT_ID or not CLIENT_SECRET:
+        print("Error: GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET must be set.")
+        print("  export GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com")
+        print("  export GOOGLE_CLIENT_SECRET=your-client-secret")
+        print("  Or copy .env.example to .env and fill in values.")
+        raise SystemExit(1)
 TOKEN_PATH = os.path.expanduser("~/.config/mcp-gdrive/gdrive-token.json")
 
 SCOPES = [
@@ -59,6 +69,7 @@ def get_token(code):
         return json.loads(resp.read())
 
 def main():
+    _check_env()
     params = urllib.parse.urlencode({
         "client_id": CLIENT_ID,
         "redirect_uri": REDIRECT_URI,

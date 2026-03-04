@@ -25,3 +25,6 @@ output/*.docx
 
 # Temp files from Office
 ~$*
+
+# Large template files (>100MB GitHub limit)
+templates/[White Background]*.pptx

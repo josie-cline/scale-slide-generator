@@ -1,0 +1,71 @@
+---
+description: Technical reference for deck generation
+alwaysApply: true
+---
+
+# Deck Generation — Technical Reference
+
+## Creating a deck
+
+Create a script in `output/run_<name>.py`:
+
+```python
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from generate_deck import main
+
+DECK = {
+    "filename": "Deck_Name",
+    "slides": [
+        # slide dicts here
+    ],
+}
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--theme", choices=["dark", "light"], default="dark")
+    args = parser.parse_args()
+    main(theme_name=args.theme, deck=DECK)
+```
+
+## Available layouts
+
+**chart** — Native PowerPoint charts. Types: bar, bar_stacked, bar_horizontal, line, pie, donut, area.
+```python
+{"layout": "chart", "title": "...", "chart_type": "bar",
+ "categories": ["Q1", "Q2", "Q3"], "series": [{"name": "Rev", "values": [10, 20, 30]}]}
+```
+
+**fact** — Single dominant number with context.
+```python
+{"layout": "fact", "title": "...", "value": "$13B", "label": "Contract Value", "detail": "Context line"}
+```
+
+**process** — Horizontal step flow (3-6 steps).
+```python
+{"layout": "process", "title": "...", "steps": [{"label": "Step", "detail": "Description"}]}
+```
+
+**quote** — Centered quotation with attribution.
+```python
+{"layout": "quote", "quote": "Text here", "attribution": "— Source"}
+```
+
+**title** — `title`, `subtitle`
+**section** — `title`
+**content** — `title`, `bullets`
+**two_column** — `title`, `left_title`, `left_bullets`, `right_title`, `right_bullets`
+**metrics** — `title`, `metrics: [{label, value, detail}]`
+**table** — `title`, `headers`, `rows`
+**gantt** — `title`, `subtitle`, `quarters`, `months`, `phases`, `tasks`
+
+All layouts accept a `notes` key for speaker notes.
+
+## Template handling
+
+If the user provides a new .pptx template:
+1. Place it in `templates/`
+2. Run `python3 extract_template_spec.py`
+3. The generator reads `template_spec.json` for logo positions and layout data

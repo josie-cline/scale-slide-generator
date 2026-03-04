@@ -1,0 +1,2159 @@
+{
+  "[White Background] Scale Public Sector Introduction M1 2025 [Q3 2025].pptx": {
+    "path": "templates/[White Background] Scale Public Sector Introduction M1 2025 [Q3 2025].pptx",
+    "slide_width": 10.0,
+    "slide_height": 5.625,
+    "layouts": {
+      "slideLayout1": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;11;p2",
+            "left": 4.94,
+            "top": 0.52,
+            "width": 4.58,
+            "height": 4.58
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;12;p2",
+            "left": 0.6,
+            "top": 0.63,
+            "width": 3.89,
+            "height": 0.95
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;13;p2",
+            "left": 0.48,
+            "top": 1.81,
+            "width": 4.01,
+            "height": 3.14
+          }
+        ]
+      },
+      "slideLayout2": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;17;p3",
+            "left": 0.341,
+            "top": 2.352,
+            "width": 9.318,
+            "height": 0.921
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;18;p3",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout3": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;20;p4",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;21;p4",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;22;p4",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;23;p4",
+            "left": 1.08,
+            "top": 5.122,
+            "width": 6.61,
+            "height": 0.386
+          }
+        ]
+      },
+      "slideLayout4": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;25;p5",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 4.374,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;26;p5",
+            "left": 5.285,
+            "top": 1.26,
+            "width": 4.374,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;27;p5",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;28;p5",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.552
+          }
+        ]
+      },
+      "slideLayout5": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;30;p6",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;31;p6",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;32;p6",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;33;p6",
+            "left": 3.488,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;34;p6",
+            "left": 6.635,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;35;p6",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          }
+        ]
+      },
+      "slideLayout6": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;39;p7",
+            "media": "",
+            "left": 0.525,
+            "top": 0.5,
+            "width": 0.552,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;37;p7",
+            "left": 0.462,
+            "top": 1.383,
+            "width": 2.78,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;38;p7",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout7": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;41;p8",
+            "left": 0.341,
+            "top": 0.608,
+            "width": 3.071,
+            "height": 0.826
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;42;p8",
+            "left": 0.341,
+            "top": 1.52,
+            "width": 3.071,
+            "height": 3.477
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;43;p8",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout8": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;47;p9",
+            "media": "",
+            "left": 9.107,
+            "top": 0.5,
+            "width": 0.552,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;45;p9",
+            "left": 0.536,
+            "top": 0.492,
+            "width": 6.964,
+            "height": 4.474
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;46;p9",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout9": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;49;p10",
+            "left": 5.0,
+            "top": 0.0,
+            "width": 5.0,
+            "height": 5.625
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;50;p10",
+            "left": 0.29,
+            "top": 1.349,
+            "width": 4.424,
+            "height": 1.621
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;51;p10",
+            "left": 0.29,
+            "top": 3.065,
+            "width": 4.424,
+            "height": 1.351
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;52;p10",
+            "left": 5.402,
+            "top": 0.792,
+            "width": 4.196,
+            "height": 4.041
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;53;p10",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout10": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;55;p11",
+            "left": 0.341,
+            "top": 4.627,
+            "width": 6.56,
+            "height": 0.662
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;56;p11",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout11": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;58;p12",
+            "left": 0.341,
+            "top": 1.21,
+            "width": 9.318,
+            "height": 2.147
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;59;p12",
+            "left": 0.341,
+            "top": 3.447,
+            "width": 9.318,
+            "height": 1.423
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;60;p12",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout12": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;62;p13",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout13": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;64;p14",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;65;p14",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout14": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;67;p15",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;68;p15",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;69;p15",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          }
+        ]
+      },
+      "slideLayout15": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;71;p16",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;72;p16",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;73;p16",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout16": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;75;p17",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;76;p17",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;77;p17",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout17": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;79;p18",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;80;p18",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;81;p18",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout18": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;83;p19",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;84;p19",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;85;p19",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout19": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;87;p20",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;88;p20",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;89;p20",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout20": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;91;p21",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;92;p21",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;93;p21",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout21": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;95;p22",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;96;p22",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;97;p22",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout22": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;99;p23",
+            "left": 0.341,
+            "top": 0.814,
+            "width": 9.318,
+            "height": 2.245
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;100;p23",
+            "left": 0.341,
+            "top": 3.099,
+            "width": 9.318,
+            "height": 0.867
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;101;p23",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout23": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;103;p24",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;104;p24",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;105;p24",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout24": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;107;p25",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;108;p25",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;109;p25",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;110;p25",
+            "left": 7.34,
+            "top": 5.224,
+            "width": 2.288,
+            "height": 0.269
+          }
+        ]
+      },
+      "slideLayout25": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;112;p26",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;113;p26",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;114;p26",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout26": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;117;p27",
+            "media": "",
+            "left": 0.258,
+            "top": 5.267,
+            "width": 0.566,
+            "height": 0.182
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;116;p27",
+            "left": 4.928,
+            "top": 5.322,
+            "width": 0.135,
+            "height": 0.135
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;118;p27",
+            "left": 8.52,
+            "top": 5.361,
+            "width": 1.402,
+            "height": 0.207
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;119;p27",
+            "left": 0.0,
+            "top": 5.523,
+            "width": 10.0,
+            "height": 0.104
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;120;p27",
+            "left": 0.804,
+            "top": 1.295,
+            "width": 8.391,
+            "height": 3.733
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;121;p27",
+            "left": 0.688,
+            "top": 0.491,
+            "width": 8.598,
+            "height": 0.564
+          }
+        ]
+      },
+      "slideLayout27": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;123;p28",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;124;p28",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;125;p28",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout28": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;127;p29",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;128;p29",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;129;p29",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout29": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;131;p30",
+            "left": 0.341,
+            "top": 0.814,
+            "width": 9.318,
+            "height": 2.245
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;132;p30",
+            "left": 0.341,
+            "top": 3.099,
+            "width": 9.318,
+            "height": 0.867
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;133;p30",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout30": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;135;p31",
+            "left": 0.341,
+            "top": 0.814,
+            "width": 9.318,
+            "height": 2.245
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;136;p31",
+            "left": 0.341,
+            "top": 3.099,
+            "width": 9.318,
+            "height": 0.867
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;137;p31",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout31": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;139;p32",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;140;p32",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;141;p32",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout32": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;143;p33",
+            "media": "",
+            "left": 0.0,
+            "top": 0.0,
+            "width": 10.0,
+            "height": 5.625
+          },
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;145;p33",
+            "media": "",
+            "left": 3.0,
+            "top": 2.004,
+            "width": 4.0,
+            "height": 1.285
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;144;p33",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;146;p33",
+            "left": 7.423,
+            "top": 5.119,
+            "width": 2.41,
+            "height": 0.374
+          }
+        ]
+      },
+      "slideLayout33": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;148;p34",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;149;p34",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;150;p34",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;151;p34",
+            "left": 3.488,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;152;p34",
+            "left": 6.635,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;153;p34",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          }
+        ]
+      },
+      "slideLayout34": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;155;p35",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;156;p35",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;157;p35",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout35": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;159;p36",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 4.374,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;160;p36",
+            "left": 5.285,
+            "top": 1.26,
+            "width": 4.374,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;161;p36",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;162;p36",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          }
+        ]
+      },
+      "slideLayout36": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;164;p37",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;165;p37",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;166;p37",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout37": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;168;p38",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;169;p38",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;170;p38",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout38": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;172;p39",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;173;p39",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;174;p39",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout39": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;176;p40",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;177;p40",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;178;p40",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout40": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;180;p41",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;181;p41",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;182;p41",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout41": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;184;p42",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;185;p42",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;186;p42",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;187;p42",
+            "left": 3.488,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;188;p42",
+            "left": 6.635,
+            "top": 1.26,
+            "width": 3.025,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;189;p42",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          }
+        ]
+      },
+      "slideLayout42": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;191;p43",
+            "left": 0.473,
+            "top": 0.331,
+            "width": 9.054,
+            "height": 0.496
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;192;p43",
+            "left": 0.473,
+            "top": 0.827,
+            "width": 9.054,
+            "height": 0.265
+          }
+        ]
+      },
+      "slideLayout43": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;194;p44",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;195;p44",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;196;p44",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout44": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;198;p45",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;199;p45",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;200;p45",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout45": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;202;p46",
+            "left": 0.473,
+            "top": 0.331,
+            "width": 9.054,
+            "height": 0.496
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;203;p46",
+            "left": 0.473,
+            "top": 1.257,
+            "width": 9.054,
+            "height": 3.64
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;204;p46",
+            "left": 0.0,
+            "top": 0.0,
+            "width": 3.281,
+            "height": 3.281
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;205;p46",
+            "left": 0.0,
+            "top": 0.0,
+            "width": 3.281,
+            "height": 3.281
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;206;p46",
+            "left": 0.0,
+            "top": 0.0,
+            "width": 3.281,
+            "height": 3.281
+          }
+        ]
+      },
+      "slideLayout46": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;208;p47",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;209;p47",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;210;p47",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout47": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;212;p48",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;213;p48",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;214;p48",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout48": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;216;p49",
+            "media": "",
+            "left": 0.0,
+            "top": 0.0,
+            "width": 10.0,
+            "height": 5.625
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;217;p49",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout49": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;219;p50",
+            "left": 0.341,
+            "top": 0.5,
+            "width": 9.318,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;220;p50",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;221;p50",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;222;p50",
+            "left": 1.08,
+            "top": 5.122,
+            "width": 6.61,
+            "height": 0.386
+          }
+        ]
+      },
+      "slideLayout50": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;224;p51",
+            "left": 0.341,
+            "top": 0.487,
+            "width": 9.318,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;225;p51",
+            "left": 0.341,
+            "top": 1.26,
+            "width": 9.318,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;226;p51",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout51": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;228;p52",
+            "media": "",
+            "left": 0.0,
+            "top": 0.0,
+            "width": 10.0,
+            "height": 5.625
+          },
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;229;p52",
+            "media": "",
+            "left": 3.895,
+            "top": 2.459,
+            "width": 2.21,
+            "height": 0.707
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;230;p52",
+            "left": 1.377,
+            "top": 3.166,
+            "width": 7.245,
+            "height": 0.588
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;231;p52",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout52": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;234;p53",
+            "media": "",
+            "left": 0.074,
+            "top": 5.118,
+            "width": 0.43,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;233;p53",
+            "left": 9.275,
+            "top": 5.195,
+            "width": 0.6,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;235;p53",
+            "left": 0.505,
+            "top": 0.487,
+            "width": 9.155,
+            "height": 0.626
+          }
+        ]
+      },
+      "slideLayout53": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;238;p54",
+            "media": "",
+            "left": 0.074,
+            "top": 5.118,
+            "width": 0.43,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;237;p54",
+            "left": 9.275,
+            "top": 5.195,
+            "width": 0.6,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;239;p54",
+            "left": 0.505,
+            "top": 0.487,
+            "width": 9.155,
+            "height": 0.626
+          }
+        ]
+      },
+      "slideLayout54": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;243;p55",
+            "media": "",
+            "left": 0.074,
+            "top": 5.118,
+            "width": 0.43,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;241;p55",
+            "left": 0.505,
+            "top": 1.26,
+            "width": 9.155,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;242;p55",
+            "left": 0.505,
+            "top": 0.487,
+            "width": 9.155,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;244;p55",
+            "left": 9.275,
+            "top": 5.195,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout55": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;246;p56",
+            "left": 9.275,
+            "top": 5.195,
+            "width": 0.6,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;247;p56",
+            "left": 0.505,
+            "top": 0.487,
+            "width": 9.155,
+            "height": 0.626
+          }
+        ]
+      },
+      "slideLayout56": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;249;p57",
+            "left": 9.275,
+            "top": 5.195,
+            "width": 0.6,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;250;p57",
+            "left": 0.505,
+            "top": 0.487,
+            "width": 9.155,
+            "height": 0.626
+          }
+        ]
+      },
+      "slideLayout57": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;252;p58",
+            "left": 0.505,
+            "top": 1.26,
+            "width": 9.155,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;253;p58",
+            "left": 0.505,
+            "top": 0.487,
+            "width": 9.155,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;254;p58",
+            "left": 9.275,
+            "top": 5.195,
+            "width": 0.6,
+            "height": 0.43
+          }
+        ]
+      }
+    },
+    "logos": []
+  },
+  "[Q3 2025] Scale slide template (white theme).pptx": {
+    "path": "templates/[Q3 2025] Scale slide template (white theme).pptx",
+    "slide_width": 10.0,
+    "slide_height": 5.625,
+    "layouts": {
+      "slideLayout1": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "Scale Logo Symbol 3D.png",
+            "name": "Google Shape;14;p2",
+            "media": "",
+            "left": 0.259,
+            "top": 0.323,
+            "width": 0.347,
+            "height": 0.347
+          },
+          {
+            "type": "picture",
+            "title": "Logotype Gradient RGB.png",
+            "name": "Google Shape;15;p2",
+            "media": "",
+            "left": 9.202,
+            "top": 0.267,
+            "width": 0.539,
+            "height": 0.173
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;11;p2",
+            "left": 0.846,
+            "top": 1.26,
+            "width": 8.116,
+            "height": 3.736
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;12;p2",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;13;p2",
+            "left": 0.817,
+            "top": 0.282,
+            "width": 8.116,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;16;p2",
+            "left": 0.817,
+            "top": 0.282,
+            "width": 8.116,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;17;p2",
+            "left": 0.846,
+            "top": 0.282,
+            "width": 8.116,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout2": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;21;p3",
+            "media": "",
+            "left": 0.525,
+            "top": 0.5,
+            "width": 0.552,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;19;p3",
+            "left": 0.462,
+            "top": 1.383,
+            "width": 2.78,
+            "height": 0.626
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;20;p3",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout3": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;25;p4",
+            "media": "",
+            "left": 9.107,
+            "top": 0.5,
+            "width": 0.552,
+            "height": 0.552
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;23;p4",
+            "left": 0.536,
+            "top": 0.492,
+            "width": 6.964,
+            "height": 4.474
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;24;p4",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout4": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;27;p5",
+            "left": 5.0,
+            "top": 0.0,
+            "width": 5.0,
+            "height": 5.625
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;28;p5",
+            "left": 0.29,
+            "top": 1.349,
+            "width": 4.424,
+            "height": 1.621
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;29;p5",
+            "left": 0.29,
+            "top": 3.065,
+            "width": 4.424,
+            "height": 1.351
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;30;p5",
+            "left": 5.402,
+            "top": 0.792,
+            "width": 4.196,
+            "height": 4.041
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;31;p5",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout5": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "Scale Logo Symbol 3D.png",
+            "name": "Google Shape;34;p6",
+            "media": "",
+            "left": 0.259,
+            "top": 0.323,
+            "width": 0.347,
+            "height": 0.347
+          },
+          {
+            "type": "picture",
+            "title": "Logotype Gradient RGB.png",
+            "name": "Google Shape;35;p6",
+            "media": "",
+            "left": 9.202,
+            "top": 0.267,
+            "width": 0.539,
+            "height": 0.173
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;33;p6",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;36;p6",
+            "left": 0.846,
+            "top": 0.282,
+            "width": 8.116,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout6": {
+        "shapes": []
+      },
+      "slideLayout7": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;39;p8",
+            "media": "",
+            "left": 0.0,
+            "top": 0.0,
+            "width": 10.0,
+            "height": 5.625
+          },
+          {
+            "type": "picture",
+            "title": "",
+            "name": "Google Shape;41;p8",
+            "media": "",
+            "left": 3.0,
+            "top": 2.004,
+            "width": 4.0,
+            "height": 1.285
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;40;p8",
+            "left": 9.266,
+            "top": 5.1,
+            "width": 0.6,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;42;p8",
+            "left": 7.423,
+            "top": 5.119,
+            "width": 2.41,
+            "height": 0.374
+          }
+        ]
+      }
+    },
+    "logos": [
+      {
+        "layout": "slideLayout1",
+        "title": "Scale Logo Symbol 3D.png",
+        "media": "",
+        "left": 0.259,
+        "top": 0.323,
+        "width": 0.347,
+        "height": 0.347
+      },
+      {
+        "layout": "slideLayout1",
+        "title": "Logotype Gradient RGB.png",
+        "media": "",
+        "left": 9.202,
+        "top": 0.267,
+        "width": 0.539,
+        "height": 0.173
+      },
+      {
+        "layout": "slideLayout5",
+        "title": "Scale Logo Symbol 3D.png",
+        "media": "",
+        "left": 0.259,
+        "top": 0.323,
+        "width": 0.347,
+        "height": 0.347
+      },
+      {
+        "layout": "slideLayout5",
+        "title": "Logotype Gradient RGB.png",
+        "media": "",
+        "left": 9.202,
+        "top": 0.267,
+        "width": 0.539,
+        "height": 0.173
+      }
+    ]
+  },
+  "Scale slide template (dark theme).pptx": {
+    "path": "templates/Scale slide template (dark theme).pptx",
+    "slide_width": 10.0,
+    "slide_height": 5.625,
+    "layouts": {
+      "slideLayout1": {
+        "shapes": [
+          {
+            "type": "picture",
+            "title": "Scale Logo Symbol 3D.png",
+            "name": "Google Shape;16;p2",
+            "media": "",
+            "left": 0.259,
+            "top": 0.323,
+            "width": 0.347,
+            "height": 0.347
+          },
+          {
+            "type": "picture",
+            "title": "Logotype Gradient RGB.png",
+            "name": "Google Shape;17;p2",
+            "media": "",
+            "left": 9.202,
+            "top": 0.267,
+            "width": 0.539,
+            "height": 0.173
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;14;p2",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;15;p2",
+            "left": 0.817,
+            "top": 0.282,
+            "width": 8.116,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout2": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;19;p3",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;20;p3",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          }
+        ]
+      },
+      "slideLayout3": {
+        "shapes": [
+          {
+            "type": "shape",
+            "name": "Google Shape;22;p4",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;23;p4",
+            "left": 9.509,
+            "top": 5.1,
+            "width": 0.357,
+            "height": 0.43
+          },
+          {
+            "type": "shape",
+            "name": "Google Shape;24;p4",
+            "left": 0.817,
+            "top": 1.957,
+            "width": 4.058,
+            "height": 1.711
+          }
+        ]
+      }
+    },
+    "logos": [
+      {
+        "layout": "slideLayout1",
+        "title": "Scale Logo Symbol 3D.png",
+        "media": "",
+        "left": 0.259,
+        "top": 0.323,
+        "width": 0.347,
+        "height": 0.347
+      },
+      {
+        "layout": "slideLayout1",
+        "title": "Logotype Gradient RGB.png",
+        "media": "",
+        "left": 9.202,
+        "top": 0.267,
+        "width": 0.539,
+        "height": 0.173
+      }
+    ]
+  }
+}

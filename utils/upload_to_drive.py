@@ -7,6 +7,16 @@ import json, os, urllib.request, urllib.parse
 TOKEN_PATH = os.path.expanduser("~/.config/mcp-gdrive/gdrive-token.json")
 CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", "")
 CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", "")
+
+
+def _check_env():
+    """Ensure Google OAuth credentials are set before making API calls."""
+    if not CLIENT_ID or not CLIENT_SECRET:
+        print("Error: GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET must be set.")
+        print("  export GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com")
+        print("  export GOOGLE_CLIENT_SECRET=your-client-secret")
+        print("  Or copy .env.example to .env and fill in values.")
+        raise SystemExit(1)
 FILE_PATH = "dla_ascend/ASCEND_PoC_Plan_OP2.docx"
 FILE_NAME = "ASCEND PoC Plan - Option Period 2"
 
@@ -52,6 +62,7 @@ def upload_file(access_token, file_path, file_name):
         return json.loads(resp.read())
 
 def main():
+    _check_env()
     with open(TOKEN_PATH) as f:
         token_data = json.load(f)
 
